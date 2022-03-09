@@ -16,18 +16,8 @@ package sistema;
  *
  * @author Sebas
  */
-public class Sistema {
-
-    public static void main(String[] args) {
-        Circulo unCirculo = new Circulo(30);
-        Rectangulo unRectangulo = new Rectangulo(5,10);
-        System.out.println(unCirculo);
-        System.out.println(unRectangulo);
-        System.out.println("+++++++++++++++++++++++++++++++++++");
-        Circulo otroCirculo = new Circulo(50);
-        Rectangulo otroRectangulo = new Rectangulo(20,30);
-        System.out.println(otroCirculo);
-        System.out.println(otroRectangulo);
-    }
-    
+public interface CalculosFormas {
+    final double PI = Math.PI;
+    double area();
+    double perimetro();
 }
